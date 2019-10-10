@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    h2,p {
+      margin: 0;
+    }
+    .ghost-content-container {
+      display: table;
+      width: 100%;
+    }
+    .ghost-content {
+      display: table-cell;
+    }
+    .element {
+      padding: 11px;
+      border: 11px solid green;
+      width: 100%;
+      box-sizing: border-box;
+      animation: pulse 4s infinite;
+    }
+    .gmail-heading,
+    .yahoo-heading {
+      display: none;
+    }
+  </style>
+  <style>
+    u + .body .gmail-heading {
+      display: block;
+    }
+    u + .body .javascript-heading {
+      display: none;
+    }
+  </style>
+  <style>
+    .interactive {
+      display:none;
+    }
+    input:checked +* .interactive {
+      display:block;
+    }
+    input:checked +* .fallback {
+      display:none;
+    }
+  </style>
+  <style>
+    @media screen yahoo {
+      .javascript-heading {
+        display: none;
+      }
+      .yahoo-heading {
+        display: block;
+      }
+    }
+  </style>
+  <style advanced>
+    @keyframes pulse {
+      0%, 100% {
+        border-color: orange;
+      }
+      50% {
+        border-color: purple;
+      }
+    }
+  </style>
+</head>
+<body class="body">
+
+<input type="checkbox" id="interactive" checked>
+
+<div class="element">
+
+  <h2 class="javascript-heading">javascript: the more you know, the less you code</h2>
+  <h2 class="gmail-heading">gmail: the more you know, the less you code</h2>
+  <h2 class="yahoo-heading">yahoo: the more you know, the less you code</h2>
+
+    <div class="interactive">
+      interactive email content
+    </div>
+
+    <div class="fallback">
+      fallback email content
+    </div>
+
+</div>
+
+<div class="ghost-content-container">
+  <!--[if true]>
+  <table role="presentation" cellspacing="0" cellpadding="0" width="100%;" bgcolor="green"><tr><td>
+  <![endif]-->
+
+  <div class="ghost-content">content surrounded by a ghost table</div>
+
+  <!--[if true]>
+  </td><td>
+  <![endif]-->
+
+  <div class="ghost-content">content surrounded by a ghost table</div>
+
+  <!--[if true]>
+  </td></tr></table>
+  <![endif]-->
+</div>
+
+<img style="height:auto;max-width:100%" width="111" height="111" src="500.jpeg" alt="Alternative text for image 1">
+<img style="height:auto;max-width:100%" width="111" height="111" src="400.jpeg" alt="Alternative text for image 2">
+<img style="height:auto;max-width:100%" width="111" height="111" src="300.jpeg" alt="">
+<img style="height:auto;max-width:100%" width="111" height="111" src="333.jpeg" alt="Alternative text for image 4">
+<img style="height:auto;max-width:100%" width="111" height="111" src="444.jpeg" alt="Alternative text for image 5">
+<img style="height:auto;max-width:100%" width="111" height="111" src="234.jpeg" alt="">
+
+</body>
+</html>

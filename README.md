@@ -40,3 +40,6 @@ Currently supports
 
 ### Blur
 Applies a `blur` value between `0px` - `10px` to the entire document
+
+### NOTES:
+After each _preview selection_, it is necessary to refresh the page, in order to reset back to the original markup. Not doing so may result in error.

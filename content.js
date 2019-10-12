@@ -71,6 +71,10 @@ if (message === `mso`) {
       "replace":""
     },
     {
+      "find": /\<\!\-\-\[mso 16\]\>/gi,
+      "replace":""
+    },
+    {
       "find": /\<\!\[endif\]\-\-\>/gi,
       "replace":""
     }
